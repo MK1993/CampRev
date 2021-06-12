@@ -93,8 +93,4 @@ app.use((err,req,res,next)=>{
   res.status(statusCode).render('error',{err})
 })
 
-const port = 3000 || process.env.PORT
-
-app.listen(port, () => {
-  console.log(`CampRev app listening at http://localhost:${port}`)
-})
+app.listen(process.env.PORT || 3000)
