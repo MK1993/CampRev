@@ -31,10 +31,11 @@ To see the app in action, go to https://camprev.herokuapp.com/
 
 Create an .env file and add values to the following variables:
 
-`
+```
 CLOUDINARY_CLOUD_NAME=
 CLOUDINARY_KEY=
 CLOUDINARY_SECRET=
 MAPBOX_TOKEN=
-DB_URL=mongodb+srv:
-`
+DB_URL=
+```
+
