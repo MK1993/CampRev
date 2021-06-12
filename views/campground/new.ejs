@@ -1,0 +1,45 @@
+<% layout('layouts/boilerplate') %>
+<div class="container" style="width: 450px; height: 100vh;">
+    <div class="row">
+        <h2 class="text-center">New Campground</h2>
+        <form action="/campgrounds" method="POST" novalidate class="form-validation" enctype="multipart/form-data">
+            <label for="title">Title</label>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" name="campground[title]" id="title" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <label for="location">Location</label>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" name="campground[location]" id="location" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="formFileMultiple" class="form-label">Image Url</label>
+                <input class="form-control" type="file" id="formFileMultiple" name="image" multiple>
+            </div>
+            <label for="price" class="form-label">Campground Price</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" id="price" name="campground[price]" aria-label="Amount (to the nearest dollar)" placeholder="0.00" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" name="campground[description]" id="description" rows="3" required></textarea>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <input class="btn btn-success" value="Add Campground" type="submit">
+                <a class="btn btn-primary" href="/campgrounds">All Campgrounds</a>
+            </div>
+        </form>
+    </div>
+</div>
