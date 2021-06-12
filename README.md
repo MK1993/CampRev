@@ -39,3 +39,26 @@ MAPBOX_TOKEN=
 DB_URL=
 ```
 
+## Clone or download this repository
+
+`git clone https://github.com/MK1993/CampRev.git`
+
+In a terminal window, initialize a Mongoose Database
+
+`$ ./mongod`
+
+In a second terminal window, display the Mongoose Database
+
+`$ mongoose`
+
+In a third terminal window, install dependencies using npm:
+
+`$ npm install`
+
+And then run the application with
+
+`$ npm start`
+
+or
+
+`$ nodemon app.js`
