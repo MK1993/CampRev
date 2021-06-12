@@ -1,5 +1,5 @@
 const Campground = require('../models/campground')
-const {cloudinary} = require('../cloudinary')
+const {cloudinary} = require('../cloudinary/index')
 const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding');
 const geocodingClient = mbxGeocoding({ accessToken: process.env.MAPBOX_TOKEN });
 
